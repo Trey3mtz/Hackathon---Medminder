@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health & Lifestyle Survey</title>
+</head>
+<body>
+  <h1>Health & Lifestyle Survey</h1>
+  <form>
+    <label for="activity-level">Activity Level:</label>
+    <select id="activity-level" name="activity-level" required>
+      <option value="">Select Activity Level</option>
+      <option value="sedentary">Sedentary</option>
+      <option value="lightly-active">Lightly Active</option>
+      <option value="moderately-active">Moderately Active</option>
+      <option value="very-active">Very Active</option>
+    </select>
+    <br><br>
+
+    <label for="medication">Do you take medication?</label>
+    <input type="radio" id="yes-medication" name="medication" value="yes">
+    <label for="yes-medication">Yes</label>
+    <input type="radio" id="no-medication" name="medication" value="no">
+    <label for="no-medication">No</label>
+    <br><br>
+
+    <label for="smoker">Are you a smoker?</label>
+    <input type="radio" id="yes-smoker" name="smoker" value="yes">
+    <label for="yes-smoker">Yes</label>
+    <input type="radio" id="no-smoker" name="smoker" value="no">
+    <label for="no-smoker">No</label>
+    <br><br>
+
+    <label for="drinks-alcohol">Do you drink alcohol?</label>
+    <input type="radio" id="yes-drinks-alcohol" name="drinks-alcohol" value="yes">
+    <label for="yes-drinks-alcohol">Yes</label>
+    <input type="radio" id="no-drinks-alcohol" name="drinks-alcohol" value="no">
+    <label for="no-drinks-alcohol">No</label>
+    <br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

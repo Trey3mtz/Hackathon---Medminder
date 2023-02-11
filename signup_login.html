@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>MedMinder</title>
+</head>
+<body>
+  <h1>MedMinder</h1>
+  <div id="buttons">
+    <button class="sign-up" id="submit-button">Sign Up</button>
+    <script>
+      const submitButton = document.querySelector("#submit-button");
+      submitButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        window.location.href = "userinfo.html";
+      });
+    </script>
+    <button class="log-in">Log In</button>
+  </div>
+</body>
+</html>
+
