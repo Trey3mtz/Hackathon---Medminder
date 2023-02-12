@@ -9,8 +9,10 @@
 </head>
 <body>
   <h1>Health & Lifestyle Survey</h1>
-  <form>
-    <label for="activity-level">Activity Level:</label>
+  
+  <form action="medication.html">
+   
+    <label for="activity-level"  class="info">Activity Level:</label>
     <select id="activity-level" name="activity-level" required>
       <option value="">Select Activity Level</option>
       <option value="sedentary">Sedentary</option>
@@ -20,28 +22,29 @@
     </select>
     <br><br>
 
-    <label for="medication">Do you take medication?</label>
+    <label for="medication" class="info">Do you take medication?</label>
     <input type="radio" id="yes-medication" name="medication" value="yes">
-    <label for="yes-medication">Yes</label>
+    <label for="yes-medication" class="info">Yes</label>
     <input type="radio" id="no-medication" name="medication" value="no">
-    <label for="no-medication">No</label>
+    <label for="no-medication" class="info">No</label>
     <br><br>
 
-    <label for="smoker">Are you a smoker?</label>
+    <label for="smoker" class="info">Are you a smoker?</label>
     <input type="radio" id="yes-smoker" name="smoker" value="yes">
-    <label for="yes-smoker">Yes</label>
+    <label for="yes-smoker" class="info">Yes</label>
     <input type="radio" id="no-smoker" name="smoker" value="no">
-    <label for="no-smoker">No</label>
+    <label for="no-smoker" class="info">No</label>
     <br><br>
 
-    <label for="drinks-alcohol">Do you drink alcohol?</label>
+    <label for="drinks-alcohol" class="info">Do you drink alcohol?</label>
     <input type="radio" id="yes-drinks-alcohol" name="drinks-alcohol" value="yes">
-    <label for="yes-drinks-alcohol">Yes</label>
+    <label for="yes-drinks-alcohol" class="info">Yes</label>
     <input type="radio" id="no-drinks-alcohol" name="drinks-alcohol" value="no">
-    <label for="no-drinks-alcohol">No</label>
+    <label for="no-drinks-alcohol" class="info">No</label>
     <br><br>
 
     <input type="submit" value="Submit">
   </form>
+
 </body>
 </html>

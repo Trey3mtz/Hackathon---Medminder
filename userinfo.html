@@ -12,6 +12,7 @@
     
     <h1>Sign up page</h1>
     <form action="heightWeightAge.html" method="post">
+      
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" required>
       <br><br>
@@ -22,13 +23,15 @@
       <input type="password" id="password" name="password" required>
       <br><br>
       <input type="submit" value="Sign Up" id="submit-button">
+   
       <script>
         const submitButton = document.querySelector("#submit-button");
         submitButton.addEventListener("click", function(event) {
           event.preventDefault();
-          window.location.href = "heightWeightAge.html";
+          window.location.href = "HWA.html";
         });
       </script>
     </form>
+  
 </body>
 </html>
