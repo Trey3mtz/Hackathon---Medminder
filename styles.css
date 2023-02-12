@@ -98,7 +98,7 @@ header {
 }
 
 header img {
-  width: 200px;
+  width: 400px;
   height: 80px;
   
 }
@@ -167,4 +167,13 @@ td {
   font-size: 16px;
 }
 
+img {
+  object-fit: scale-down;
+  width: 100px;
+  
+}
 
+.sign-up{
+ margin-left: 0px;
+ font-size: 12px;
+}

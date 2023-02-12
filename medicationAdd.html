@@ -7,20 +7,15 @@
   <title>Medication Tracker</title>
 </head>
 <body>
-  <h1>Medication Tracker</h1>
+  <h1>Add Medication</h1>
   <form action="main.html">
-    <p>Are you currently taking any vitamins or medication?</p>
-    <input type="radio" id="yes" name="taking-medication" value="yes" onclick="showMedicationInput()">
-    <label for="yes">Yes</label>
-    <input type="radio" id="no" name="taking-medication" value="no" onclick="hideMedicationInput()">
-    <label for="no">No</label>
+    <button type="button" id="add-medication-button" onclick="addMedicationInput()">Add Another</button>
     
-    <div id="medication-input" style="display: none;">
+    <div id="medication-input">
       <div id="medication-1">
         <p>Medication 1:</p>
         <input type="text" name="medication-1">
       </div>
-      <button type="button" id="add-medication-button" onclick="addMedicationInput()">Add Another Medication</button>
     </div>
     <br>
     
@@ -29,14 +24,6 @@
 
   <script>
     let medicationCounter = 1;
-
-    function showMedicationInput() {
-      document.getElementById("medication-input").style.display = "block";
-    }
-
-    function hideMedicationInput() {
-      document.getElementById("medication-input").style.display = "none";
-    }
 
     function addMedicationInput() {
       medicationCounter++;

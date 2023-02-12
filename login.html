@@ -9,7 +9,10 @@
     <title>Login Form</title>
   </head>
   <body>
-    <form action="main2.html">
+    <header>
+      <img src="image.jpeg" alt="Logo">
+    </header>
+    <form action="main.html">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username">
       <br><br>
@@ -20,6 +23,16 @@
       <label for="remember-me">Remember Me</label>
       <br><br>
       <input type="submit" value="Login">
+      <br><br>
+      <p>No account?</p>
+      <button class="sign-up" id="submit-button">Sign Up</button>
+      <script>
+        const submitButton = document.querySelector("#submit-button");
+        submitButton.addEventListener("click", function(event) {
+          event.preventDefault();
+          window.location.href = "userinfo.html";
+        });
+      </script>
     </form>
   </body>
 </html>
